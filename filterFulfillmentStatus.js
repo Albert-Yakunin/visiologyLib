@@ -1,1 +1,3 @@
-console.log('filter work');
+function filterWork() {
+    console.log('filter work');
+}
