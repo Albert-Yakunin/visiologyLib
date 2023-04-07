@@ -1,5 +1,9 @@
 let arrayFilterRemove = ['<Пусто>', '<ОТСЕВ>', 'НЕ ОПРЕДЕЛЕНО'];
 
+function filterWork() {
+    console.log('filter work');
+}
+
 function filterFulfillmentStatus_updateData(w) {
     w.data.data = updateFilterValue(w.data.data);
     return w;
