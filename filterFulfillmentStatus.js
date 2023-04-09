@@ -1,9 +1,9 @@
 function filterFulfillmentStatus_updateData(w) {
-  w.data.data = updateFilterValue(w.data.data);
+  w.data.data = filterFulfillmentStatus_updateFilterValue(w.data.data);
   return w;
 }
 
-function updateFilterValue(arr) {
+function filterFulfillmentStatus_updateFilterValue(arr) {
   return arr.filter(
     (item, index) => arrayFilterRemove.indexOf(item.text) < 0
   );
