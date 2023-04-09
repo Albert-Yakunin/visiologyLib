@@ -8,7 +8,7 @@ function updateFilterValue(arr) {
     return arr.filter((item, index) => arrayFilterRemove.indexOf(item.text) < 0);
 }
 
-function filterFulfillmentStatus_cssStyle() {
+function filterFulfillmentStatus_cssStyle(w) {
     let widget = $('#' + w.general.renderTo);
 
     //Изменить шрифт вложеных значений
