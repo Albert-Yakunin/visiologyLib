@@ -2,8 +2,8 @@ function filterPurchaseMethodType_updateData(w) {
     return w;
   }
 
-  // доделать пропс
-  function filterPurchaseMethodType_cssStyle(w,props){
+  
+  function filterPurchaseMethodType_cssStyle(w){
     let widget = $('#' + w.general.renderTo);
     
     //Изменить шрифт вложеных значений
@@ -22,10 +22,10 @@ function filterPurchaseMethodType_updateData(w) {
     // Высота выпадающего списка
     widget.find('.rb-filter-body-container .rb-filter-list-container > ul').css({
         'height': 'auto',
-        'max-height': props.height ? props.height + 'px' : '500px'
+        'max-height': w.props.height ? w.props.height + 'px' : '500px'
     });
     // Мин Ширина выпадающего списка и ширина выпадающего списка
-    widget.find('.rb-filter-body-container').css({ 'min-width' : '310px', 'width' : props.width ? props.width + 'px' : '310px' });
+    widget.find('.rb-filter-body-container').css({ 'min-width' : '310px', 'width' : w.props.width ? w.props.width + 'px' : '310px' });
     
     // Изменяем цвет контура фильтра, в borderColor можно подставить любой цвет для перекраски контура фильтров
     const borderColor = '#C4CDD6'
